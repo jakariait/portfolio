@@ -6,7 +6,7 @@ import { slideIn } from "../utils/motion";
 import { Button } from "@mui/material";
 import { Email, LinkedIn, GitHub, ArrowOutward } from "@mui/icons-material";
 
-import contactus from "../assets/contact-pages.png";
+import contactus from "../assets/contact.png";
 
 const Contact = () => {
   return (
