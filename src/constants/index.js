@@ -24,7 +24,7 @@ import expressjs from "../../src/assets/tech/expressjs.png";
 import mongodb from "../../src/assets/tech/mongodb.png";
 import mongoose from "../../src/assets/tech/mongoose.png";
 import git from "../../src/assets/tech/git.png";
-import githubicon from "../../src/assets/tech/github.png";
+import githubicon from "../../src/assets/github.png";
 import ec2 from "../../src/assets/tech/ec2.png";
 import s3 from "../../src/assets/tech/Amazon-S3.png";
 import nxtjs from "../../src/assets/tech/Next.js.png";
@@ -36,7 +36,6 @@ import chrome from "../../src/assets/tools/chrome.png";
 import mongodbCompass from "../../src/assets/tools/mongodbCompass.png";
 import postman from "../../src/assets/tools/postman.png";
 import webstorm from "../../src/assets/tools/webstorm.512x512.png";
-import figma from "../../src/assets/tools/figma.342x512.png";
 
 import frontend from "../../src/assets/frontend.png";
 import design from "../../src/assets/design.png";
@@ -355,7 +354,7 @@ const projects = [
     ],
     image: portfolio,
     alt: "Portfolio",
-    source_code_link: "https://github.com/Rajeshesh/portfolio",
+    source_code_link: "https://github.com/jakariait/portfolio",
     live_link: "https://mern-rajesh-portfolio.web.app/",
   },
   {

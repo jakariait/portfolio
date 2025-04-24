@@ -6,6 +6,8 @@ import { slideIn } from "../utils/motion";
 import { Button } from "@mui/material";
 import { Email, LinkedIn, GitHub, ArrowOutward } from "@mui/icons-material";
 
+import contctus from "../assets/contact-pages.png";
+
 const Contact = () => {
   return (
     <>
@@ -54,27 +56,27 @@ const Contact = () => {
           className="md:h-auto md:flex-1"
         >
           <img
-            src="https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/contact.jpeg"
+            src={contctus}
             alt="contact-us"
             className="h-full w-full object-contain"
           />
         </motion.div>
       </div>
       <div className="mb-4 ml-5">
-        <h1 className="my-3  text-xl font-semibold text-slate-50">
+        <h1 className="my-3  text-xl text-center font-semibold text-slate-50">
           Thanks for scrolling.
         </h1>
-        <div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1L1mVzD8cU6lc1yZZkZJ96Ej3IWRaljuW/view?usp=drivesdk"
-          >
-            <Button variant="outlined" endIcon={<ArrowOutward />}>
-              Resume
-            </Button>
-          </a>
-        </div>
+        {/*<div>*/}
+        {/*  <a*/}
+        {/*    target="_blank"*/}
+        {/*    rel="noopener noreferrer"*/}
+        {/*    href="https://drive.google.com/file/d/1L1mVzD8cU6lc1yZZkZJ96Ej3IWRaljuW/view?usp=drivesdk"*/}
+        {/*  >*/}
+        {/*    <Button variant="outlined" endIcon={<ArrowOutward />}>*/}
+        {/*      Resume*/}
+        {/*    </Button>*/}
+        {/*  </a>*/}
+        {/*</div>*/}
       </div>
       <hr className="ml-2" />
     </>
