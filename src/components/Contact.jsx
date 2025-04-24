@@ -6,7 +6,7 @@ import { slideIn } from "../utils/motion";
 import { Button } from "@mui/material";
 import { Email, LinkedIn, GitHub, ArrowOutward } from "@mui/icons-material";
 
-import contctus from "../assets/contact-pages.png";
+import contactus from "../assets/contact-pages.png";
 
 const Contact = () => {
   return (
@@ -56,7 +56,7 @@ const Contact = () => {
           className="md:h-auto md:flex-1"
         >
           <img
-            src={contctus}
+            src={contactus}
             alt="contact-us"
             className="h-full w-full object-contain"
           />
