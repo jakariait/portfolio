@@ -27,8 +27,8 @@ import git from "../../src/assets/tech/git.png";
 import githubicon from "../../src/assets/github.png";
 import ec2 from "../../src/assets/tech/ec2.png";
 import s3 from "../../src/assets/tech/Amazon-S3.png";
-import nxtjs from "../../src/assets/tech/Next.js.png";
-import wordpress from "../../src/assets/tech/wordpress.512x512.png";
+import nxtjs from "../assets/tech/next.png";
+import wordpress from "../assets/tech/wordpress.png";
 
 import vscode from "../../src/assets/tools/vscode.png";
 import ChatGPT from "../../src/assets/tools/ChatGPT.png";
@@ -41,8 +41,8 @@ import frontend from "../../src/assets/frontend.png";
 import design from "../../src/assets/design.png";
 import backend from "../../src/assets/backend.png";
 
-import mernShop from "../../src/assets/portfolio/ChatGPT Image Apr 21, 2025, 11_32_43 PM.png";
-import rabbilclone from "../../src/assets/portfolio/1_k3OU519iKbNHycQXdiRraw.jpg";
+import mernShop from "../assets/portfolio/mernshop.png";
+import rabbilclone from "../assets/portfolio/lms.jpg";
 import portfolio from "../../src/assets/portfolio/portfolio.png";
 
 const navLinks = [
