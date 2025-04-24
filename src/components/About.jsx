@@ -21,8 +21,7 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-tertiary px-12 py-5"
       >
-        <img src={icon} alt={title} className="h-16 w-16 object-contain" />
-
+        <div className="text-white">{icon}</div>
         <h3 className="text-center text-[20px] font-bold text-white">
           {title}
         </h3>
@@ -71,6 +70,7 @@ const About = () => {
           ))}
         </div>
       </div>
+
       <div className="flex-center-center mt-20 flex-col">
         <h3 className={styles.sectionSubText}>Tools and Software</h3>
         <div className="mt-2 flex flex-wrap  justify-center gap-10 ">

@@ -5,6 +5,9 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import webLink from "../assets/webLink.png";
+import github from "../assets/github.png";
+
 const ProjectCard = ({
   index,
   name,
@@ -17,8 +20,8 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.1 + 0.3, 0.7)}>
-      <div className="w-full rounded-2xl bg-tertiary p-5 sm:w-[360px]">
-        <div className="relative h-[230px] w-full">
+      <div className="rounded-2xl bg-tertiary p-5 ">
+        <div className="relative  w-full">
           <img
             src={image}
             alt={alt}
@@ -31,7 +34,7 @@ const ProjectCard = ({
               className="black-gradient mr-1 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
             >
               <img
-                src="https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/webLink.png"
+                src={webLink}
                 alt="live link"
                 className="h-full w-full rounded-full  object-contain"
               />
@@ -41,7 +44,7 @@ const ProjectCard = ({
               className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
             >
               <img
-                src="https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/github.png"
+                src={github}
                 alt="source code"
                 className="h-3/4 w-3/4 object-contain"
               />
@@ -87,7 +90,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="flex-around-center mt-20 flex-wrap gap-7">
+      <div className=" grid-clos-1 mt-20 grid gap-5 md:grid-cols-2">
         {projects.map((project, index) => (
           <ProjectCard key={index} index={index} {...project} />
         ))}

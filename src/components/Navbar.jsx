@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { Menu, X } from "lucide-react";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 
@@ -41,9 +41,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src="./logo.png" alt="logo" className="h-9 w-9 object-contain" />
+          {/*<img src="./logo.png" alt="logo" className="h-9 w-9 object-contain" />*/}
           <p className="flex cursor-pointer text-[18px] font-bold text-white ">
-            Rajesh &nbsp;
+            Jakaria &nbsp;
             <span className="hidden sm:block"> | MERN Stack Developer</span>
           </p>
         </Link>
@@ -63,16 +63,9 @@ const Navbar = () => {
         </ul>
 
         <div className="flex flex-1 items-center justify-end sm:hidden">
-          <img
-            src={
-              toggle
-                ? "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/close.svg"
-                : "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/menu.svg"
-            }
-            alt="menu"
-            className="h-[28px] w-[28px] object-contain"
-            onClick={() => setToggle(!toggle)}
-          />
+          <div onClick={() => setToggle(!toggle)} className="cursor-pointer">
+            {toggle ? <X size={28} /> : <Menu size={28} />}
+          </div>
 
           <div
             className={`${

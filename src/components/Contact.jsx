@@ -18,7 +18,7 @@ const Contact = () => {
           <h3 className={styles.sectionHeadText}>Contact.</h3>
           <div className="flex-center-center mt-8 flex-wrap gap-2">
             <div>
-              <a href="mailto:mern.dev.rajesh@gmail.com">
+              <a href="mailto:jakariait@gmail.com">
                 <Button variant="outlined" endIcon={<Email />}>
                   Email
                 </Button>
@@ -26,7 +26,7 @@ const Contact = () => {
             </div>
             <div>
               <a
-                href="https://www.linkedin.com/in/rajesh-p-09b86724a"
+                href="https://www.linkedin.com/in/jakaria-leadsfolk/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -37,7 +37,7 @@ const Contact = () => {
             </div>
             <div>
               <a
-                href="https://github.com/Rajeshesh"
+                href="https://github.com/jakariait/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -10,53 +10,32 @@ const Hero = () => {
   const isSmallScreen = useMediaQuery("(max-width:640px)");
 
   return (
-    <section
-      className={`flex-between-center relative mx-auto h-screen w-full flex-col`}
-    >
+    <section className="relative mx-auto flex min-h-screen w-full items-center justify-center overflow-hidden">
       <ParticlesContainer />
-      <div className="flex-between-center">
-        <div
-          className={`top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
-        >
-          <div className="mt-5 flex flex-col items-center justify-center">
-            <div className="h-5 w-5 rounded-full bg-[#915EFF]" />
-            <div className="violet-gradient h-40 w-1 sm:h-80" />
-          </div>
-          <motion.div variants={textVariant()}>
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className="text-[#915EFF]">Rajesh</span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop Full Stack Wep Applications, using{" "}
-              <br className="hidden sm:block" />
-              <span className="gradient-text"> MERN Stack</span>
-            </p>
-          </motion.div>
-        </div>
-        <motion.div
+
+      <div className="relative z-10 flex flex-col items-center px-6 text-center">
+        <motion.h1
           variants={textVariant()}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="z-[1] h-full"
+          className={`${styles.heroHeadText} text-white`}
         >
-          <Avatar
-            alt="my image"
-            src="./myImage1.png"
-            sx={
-              !isSmallScreen
-                ? { width: 200, height: 400 }
-                : { width: 100, height: 200 }
-            }
-          />
-        </motion.div>
+          Hi, I'm <span className="text-[#915EFF]">Jakaria</span>
+        </motion.h1>
+
+        <motion.p
+          variants={fadeIn("up", "spring", 0.3, 1)}
+          className={`${styles.heroSubText} mt-4 max-w-xl text-white-100`}
+        >
+          I develop Full Stack Web Applications using{" "}
+          <br className="hidden sm:block" />
+          <span className="gradient-text">MERN Stack</span>
+        </motion.p>
       </div>
 
-      <div className="flex-center-center mb-40 w-full ">
+      <div className="absolute bottom-10 flex w-full items-center justify-center">
         <a href="#about">
           <div className="flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 border-secondary p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
+              animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
