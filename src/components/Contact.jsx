@@ -6,8 +6,6 @@ import { slideIn } from "../utils/motion";
 import { Button } from "@mui/material";
 import { Email, LinkedIn, GitHub, ArrowOutward } from "@mui/icons-material";
 
-import contactus from "../assets/portfolio/contact.png";
-
 const Contact = () => {
   return (
     <>
@@ -53,17 +51,26 @@ const Contact = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.1, 0.5)}
-          className="md:h-auto md:flex-1"
+          className="flex-[0.75] rounded-2xl bg-black-100 p-8"
         >
-          <img
-            src={contactus}
-            alt="contact-us"
-            className="h-full w-full object-contain"
-          />
+          <div className="flex h-full w-full flex-col items-center justify-center rounded-2xl p-8 text-center shadow-md">
+            <h2 className="mb-4 text-3xl font-bold text-white">
+              Let's Collaborate!
+            </h2>
+            <p className="mb-4 max-w-md text-gray-400">
+              I'm always excited to connect with like-minded people, work on
+              impactful projects, or just chat about tech, startups, and design.
+            </p>
+            <p className="max-w-md text-gray-400">
+              Drop a message — even if it’s just to say hello. Who knows what we
+              might build together!
+            </p>
+            <div className="mt-6 text-sm text-gray-500">— Jakaria</div>
+          </div>
         </motion.div>
       </div>
       <div className="mb-4 ml-5">
-        <h1 className="my-3  text-xl text-center font-semibold text-slate-50">
+        <h1 className="my-3  text-center text-xl font-semibold text-slate-50">
           Thanks for scrolling.
         </h1>
         {/*<div>*/}
