@@ -16,28 +16,22 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.1 + 0.3, 0.7)}
-    className="w-full rounded-3xl bg-black-200 p-10 xs:w-[320px]"
+    className="w-full rounded-3xl bg-black-200 p-4 xs:w-[320px]"
   >
-    <p className="text-[48px] font-black text-white">"</p>
-
     <div className="mt-1">
-      <p className="text-[18px] tracking-wider text-white">{testimonial}</p>
+      <p className=" tracking-wider text-white">
+        <span className={"text-4xl"}>"</span>
+        {testimonial}
+        <span className={"text-4xl"}>"</span>
+      </p>
 
       <div className="mt-7 flex items-center justify-between gap-1">
         <div className="flex flex-1 flex-col">
           <p className="text-[16px] font-medium text-white">
-            <span className="blue-text-gradient">@</span> {name}
-          </p>
-          <p className="mt-1 text-[12px] text-secondary">
-            {designation} of {company}
+            <span className="blue-text-gradient">@</span> {name}{" "}
+            <span className={"text-xs"}>{designation}</span>
           </p>
         </div>
-
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="h-10 w-10 rounded-full object-cover"
-        />
       </div>
     </div>
   </motion.div>
@@ -45,7 +39,7 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 rounded-[20px] bg-black-100`}>
+    <div className={`mt-2 rounded-[20px] bg-black-100`}>
       <div
         className={`rounded-2xl bg-tertiary ${styles.padding} min-h-[300px]`}
       >
@@ -55,7 +49,7 @@ const Feedbacks = () => {
         </motion.div>
       </div>
       <div
-        className={`-mt-20 pb-14 ${styles.paddingX} flex-center-center flex-wrap gap-7`}
+        className={`-mt-40 md:-mt-20 pb-14 ${styles.paddingX} grid md:grid-cols-3 gap-16`}
       >
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
@@ -66,3 +60,4 @@ const Feedbacks = () => {
 };
 
 export default SectionWrapper(Feedbacks, "feedbacks");
+

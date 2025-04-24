@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="flex flex-col-reverse gap-10 overflow-hidden md:mt-12 md:flex-row ">
         <motion.div
           variants={slideIn("left", "tween", 0.1, 0.5)}
-          className="flex-[0.75] rounded-2xl bg-black-100 p-8"
+          className="flex-[0.75] rounded-2xl bg-black-100 p-8 "
         >
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -51,7 +51,7 @@ const Contact = () => {
 
         <motion.div
           variants={slideIn("right", "tween", 0.1, 0.5)}
-          className="flex-[0.75] rounded-2xl bg-black-100 p-8"
+          className="flex-[0.75] rounded-2xl bg-black-100 md:p-8"
         >
           <div className="flex h-full w-full flex-col items-center justify-center rounded-2xl p-8 text-center shadow-md">
             <h2 className="mb-4 text-3xl font-bold text-white">

@@ -262,27 +262,43 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rajesh proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Jakaria delivered exactly what we needed — a clean, modern website with flawless responsiveness. His ability to understand our requirements and turn them into pixel-perfect design is impressive.",
+    name: "Sarah M.",
+    designation: "Startup Founder",
+    company: "",
+    image: "",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients success like Rajesh does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Super professional and easy to work with. Jakaria built our dashboard using React and MUI, and it turned out fast, sleek, and highly user-friendly. Highly recommended!",
+    name: "Alex K.",
+    designation: "Product Manager",
+    company: "",
+    image: "",
   },
   {
     testimonial:
-      "After Rajesh optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "We hired Jakaria for a custom eCommerce build. From setting up the MERN stack to deploying it on AWS, everything was handled smoothly. His communication was top-notch throughout the project.",
+    name: "Ahmed R.",
+    designation: "CEO",
+    company: "",
+    image: "",
+  },
+  {
+    testimonial:
+      "Jakaria’s attention to detail and problem-solving skills are rare to find. He took full ownership of the project and went above and beyond to deliver on time.",
+    name: "Emily L.",
+    designation: "Creative Director",
+    company: "",
+    image: "",
+  },
+  {
+    testimonial:
+      "From UI/UX to backend logic, Jakaria knows how to build complete applications. He even helped us with performance tuning and best practices. We’ll definitely work with him again!",
+    name: "Jason T.",
     designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "",
+    image: "",
   },
 ];
 
@@ -355,31 +371,8 @@ const projects = [
     image: portfolio,
     alt: "Portfolio",
     source_code_link: "https://github.com/jakariait/portfolio",
-    live_link: "https://mern-rajesh-portfolio.web.app/",
-  },
-  {
-    name: "PG Management",
-    description:
-      "A comprehensive PG Management platform that allows Admin to manage people who are staying in their PG and provide them with the best possible service.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image:
-      "https://rajesh-mern-stack-portfolio-images.s3.ap-south-1.amazonaws.com/assets/portfolio.png",
-    source_code_link: "https://github.com/Rajeshesh",
-    live_link: "http://3.82.129.40:8000/",
-  },
+    live_link: "https://portfolio-jakariaits-projects.vercel.app/",
+  }
 ];
 
 export {
