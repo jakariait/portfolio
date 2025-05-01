@@ -7,16 +7,16 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
 const FeedbackCard = ({
-  index,
-  testimonial,
-  name,
-  designation,
-  company,
-  image,
-}) => (
+                        index,
+                        testimonial,
+                        name,
+                        designation,
+                        company,
+                        image,
+                      }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.1 + 0.3, 0.7)}
-    className="w-full rounded-3xl bg-black-200 p-4 xs:w-[320px]"
+    className="w-full rounded-3xl bg-black-200 p-4 "
   >
     <div className="mt-1">
       <p className=" tracking-wider text-white">
@@ -49,7 +49,7 @@ const Feedbacks = () => {
         </motion.div>
       </div>
       <div
-        className={`-mt-40 md:-mt-20 pb-14 ${styles.paddingX} grid md:grid-cols-3 gap-16`}
+        className={`-mt-40 md:-mt-20 pb-14 ${styles.paddingX} grid md:grid-cols-2  gap-4 w-full`}
       >
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
@@ -60,4 +60,3 @@ const Feedbacks = () => {
 };
 
 export default SectionWrapper(Feedbacks, "feedbacks");
-
