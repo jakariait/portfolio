@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -41,8 +42,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/*<img src="./logo.png" alt="logo" className="h-9 w-9 object-contain" />*/}
-          <p className="flex cursor-pointer md:text-[18px] md:font-bold text-white ">
+          <img src="/logo.png" alt="logo" className="h-9 w-9 object-contain" />
+          <p className="flex cursor-pointer text-white md:text-[18px] md:font-bold ">
             Jakaria &nbsp;
             <span className=""> | MERN Stack Developer</span>
           </p>
