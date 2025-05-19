@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import ParticlesContainer from "./ParticlesContainer";
 import { Avatar, useMediaQuery } from "@mui/material";
+import Stats from "./Stats";
 
 const Hero = () => {
   const isSmallScreen = useMediaQuery("(max-width:640px)");
@@ -29,6 +30,11 @@ const Hero = () => {
           <br className="hidden sm:block" />
           <span className="gradient-text">MERN Stack</span>
         </motion.p>
+        <div className={"mt-20"}>
+          <Stats/>
+        </div>
+
+
       </div>
 
       <div className="absolute bottom-10 flex w-full items-center justify-center">

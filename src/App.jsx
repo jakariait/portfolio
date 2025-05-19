@@ -9,6 +9,7 @@ import {
   Navbar,
   Works,
 } from "./components";
+import Stats from "./components/Stats";
 
 const App = () => {
   return (
